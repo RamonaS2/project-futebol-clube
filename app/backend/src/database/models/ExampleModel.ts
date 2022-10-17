@@ -1,6 +1,6 @@
 import { Model } from 'sequelize';
 import db from '.';
-// import OtherModel from './OtherModel'; iniciando projeto
+// import OtherModel from './OtherModel';
 
 class Example extends Model {
   // public <campo>!: <tipo>;
@@ -17,7 +17,7 @@ Example.init({
 });
 
 /**
-  * `Workaround` para aplicar as associations em TS: 
+  * `Workaround` para aplicar as associations em TS:
   * Associations 1:N devem ficar em uma das instâncias de modelo
   * */
 
