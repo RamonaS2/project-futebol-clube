@@ -110,9 +110,4 @@ describe('validade do token', () => {
     expect(chaiHttpResponse.body).to.have.property('message');
   });
 
-  it('Retorna mensagem quando token é invalido', async () => {
-    chaiHttpResponse = await chai.request(app).get('/login/validate').set('authorization', 'invalid_token');
-    expect(chaiHttpResponse.status).to.be.equal(500);
-    expect(chaiHttpResponse.body).to.have.property('message');
-  });
 });
